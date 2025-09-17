@@ -170,16 +170,95 @@
 <section class="contact py-5" id="contact">
   <div class="container text-center">
     <h2>যোগাযোগ করুন / বুক করুন</h2>
-    <form class="mx-auto" style="max-width:600px;">
-      <input type="text" class="form-control mb-3" placeholder="নাম" required>
-      <input type="email" class="form-control mb-3" placeholder="ইমেল" >
-      <input type="tel" class="form-control mb-3" placeholder="ফোন" required>
-      <input type="text" class="form-control mb-3" placeholder="ইভেন্টের ধরন" required>
-      <textarea class="form-control mb-3" rows="5" placeholder="বার্তা" required></textarea>
-      <button type="submit" class="btn btn-primary btn-lg">পাঠান</button>
+    <form class="mx-auto text-start" style="max-width:700px;">
+      
+      <!-- Name -->
+      <label class="form-label fw-bold">নাম</label>
+      <input type="text" class="form-control mb-3" placeholder="আপনার নাম লিখুন" required>
+
+      <!-- Email -->
+      <label class="form-label fw-bold">ইমেল</label>
+      <input type="email" class="form-control mb-3" placeholder="আপনার ইমেল দিন">
+
+      <!-- Phone -->
+      <label class="form-label fw-bold">ফোন</label>
+      <input type="tel" class="form-control mb-3" placeholder="আপনার ফোন নাম্বার লিখুন" required>
+
+      <!-- Event Type -->
+      <label class="form-label fw-bold">ইভেন্টের ধরন</label>
+      <input type="text" class="form-control mb-3" placeholder="যেমন: বিয়ে, কর্পোরেট, জন্মদিন" required>
+
+      <!-- Event Date & Time -->
+      <label class="form-label fw-bold">ইভেন্টের তারিখ ও সময়</label>
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <input type="time" class="form-control" required>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <label class="form-label fw-bold">ইভেন্টের লোকেশন</label>
+      <input type="text" class="form-control mb-3" placeholder="লোকেশন লিখুন" required>
+
+      <!-- Number of Guests -->
+      <label class="form-label fw-bold">অতিথির সংখ্যা</label>
+      <input type="number" class="form-control mb-3" placeholder="মোট অতিথির সংখ্যা" min="1" required>
+
+      <!-- Budget -->
+      <label class="form-label fw-bold">বাজেট</label>
+      <input type="text" class="form-control mb-3" placeholder="আপনার বাজেট লিখুন (যেমন: ১,৫০,০০০ টাকা)">
+
+      <!-- Services -->
+      <label class="form-label fw-bold">সার্ভিস নির্বাচন করুন:</label><br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="ডেকোরেশন">
+        <label class="form-check-label">ডেকোরেশন</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="ক্যাটারিং">
+        <label class="form-check-label">ক্যাটারিং</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="ফটোগ্রাফি">
+        <label class="form-check-label">ফটোগ্রাফি</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="মিউজিক">
+        <label class="form-check-label">মিউজিক/সাউন্ড</label>
+      </div>
+      <div class="form-check form-check-inline mb-3">
+        <input class="form-check-input" type="checkbox" value="লাইটিং">
+        <label class="form-check-label">লাইটিং</label>
+      </div>
+
+      <!-- Communication Method -->
+      <label class="form-label fw-bold d-block">আপনার পছন্দের যোগাযোগ মাধ্যম:</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="contactMethod" value="ফোন" checked>
+        <label class="form-check-label">ফোন</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="contactMethod" value="ইমেল">
+        <label class="form-check-label">ইমেল</label>
+      </div>
+      <div class="form-check form-check-inline mb-3">
+        <input class="form-check-input" type="radio" name="contactMethod" value="ফেসবুক">
+        <label class="form-check-label">ফেসবুক/মেসেঞ্জার</label>
+      </div>
+
+      <!-- Notes -->
+      <label class="form-label fw-bold d-block">অতিরিক্ত নোট / বিশেষ অনুরোধ</label>
+      <textarea class="form-control mb-3" rows="5" placeholder="এখানে আপনার বিশেষ অনুরোধ লিখুন"></textarea>
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-warning btn-lg w-100">পাঠান</button>
     </form>
   </div>
 </section>
+
 
 <!-- About -->
 <section class="about py-5" id="about">
